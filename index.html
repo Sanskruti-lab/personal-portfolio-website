@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskruti Gangurde | AI&DS Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-bg: #e0f2fe; 
+            --primary-text: #0f172a;
+            --accent: #2563eb;
+        }
+        body {
+            background-color: var(--main-bg);
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .container { max-width: 1000px; margin: auto; }
+        
+        .btn-shadow {
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4);
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline-container {
+            border-left: 3px solid var(--accent);
+            margin-left: 0.5rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -11px;
+            top: 6px;
+            width: 18px;
+            height: 18px;
+            background: var(--accent);
+            border-radius: 50%;
+            border: 4px solid var(--main-bg);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-slate-700">
+
+    <header class="flex justify-between items-center py-6 container mb-16">
+        <div class="flex items-center space-x-2 text-2xl font-bold text-slate-900">
+            <span class="text-blue-600 font-black">&lt;/&gt;</span>
+            <span>Sanskruti Gangurde</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 font-medium">
+            <a href="#about" class="hover:text-blue-600 transition">About Me</a>
+            <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+            <a href="#resume" class="hover:text-blue-600 transition">Resume</a>
+            <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="hero" class="py-16 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="max-w-2xl">
+                <p class="text-blue-600 font-bold tracking-widest uppercase mb-2">Aspiring AI & DS Engineer</p>
+                <h1 class="text-6xl font-black text-slate-900 mb-6">Sanskruti Gangurde</h1>
+                <p class="text-xl text-slate-600 mb-8">Building the future with Data Intelligence and Creative Code.</p>
+                <a href="#contact" class="px-10 py-4 bg-blue-600 text-white rounded-full font-bold btn-shadow hover:bg-blue-700 transition">Get In Touch</a>
+            </div>
+            <div class="w-48 h-48 rounded-full bg-gradient-to-br from-blue-400 to-blue-700 flex items-center justify-center text-white text-5xl font-black shadow-2xl">SG</div>
+        </section>
+
+        <section id="about" class="py-20">
+            <h2 class="text-5xl font-extrabold text-slate-900 mb-8">About Me</h2>
+            <div class="bg-white p-10 rounded-[2.5rem] shadow-sm text-lg leading-relaxed">
+                <p class="mb-4">I am a passionate <strong>Artificial Intelligence & Data Science</strong> student at PVG's COET, Pune. My journey is driven by a deep curiosity about how data can solve real-world problems and how AI can enhance human capabilities.</p>
+                <p>Currently, I am focusing on mastering Python, Natural Language Processing, and Web Development to build applications that are not just functional, but intelligent. I love tackling complex hackathons and turning ideas into clean, working code.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20">
+            <h2 class="text-5xl font-extrabold text-slate-900 mb-4">Projects</h2>
+            <p class="text-xl text-slate-600 mb-12">My practical applications in AI/DS and software development:</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <h3 class="text-3xl font-extrabold text-blue-900 mb-4 leading-tight">AI Powered Grocery Chatbot</h3>
+                    <p class="text-slate-600 mb-8 flex-grow">An intelligent assistant developed using Python and NLP to help users find groceries and get recommendations based on their needs.</p>
+                    <div>
+                        <p class="text-sm font-bold text-blue-600 mb-6 uppercase tracking-wider">Tech: Python, NLP, Data Analysis</p>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Sanskruti-lab" target="_blank" class="px-6 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold hover:bg-slate-200 transition">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="text-3xl font-extrabold text-blue-900 mb-4 leading-tight">Voice to Notes Generator</h3>
+                    <p class="text-slate-600 mb-8 flex-grow">A productivity tool that converts speech into structured digital notes using Speech-to-Text libraries for hands-free documentation.</p>
+                    <div>
+                        <p class="text-sm font-bold text-blue-600 mb-6 uppercase tracking-wider">Tech: Python, SpeechRecognition, NLP</p>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Sanskruti-lab" target="_blank" class="px-6 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold hover:bg-slate-200 transition">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="py-20">
+            <h2 class="text-5xl font-extrabold text-slate-900 mb-6">Resume</h2>
+            <p class="text-xl text-slate-600 mb-8">Download my resume here:</p>
+            
+            <a href="./Sanskruti_Resume.pdf" download="Sanskruti_Resume.pdf" class="inline-flex items-center px-8 py-4 bg-blue-600 text-white rounded-full font-bold btn-shadow transition transform hover:-translate-y-1 mb-16">
+                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                ↓ Download Resume (PDF)
+            </a>
+
+            <div class="timeline-container space-y-12">
+                <div>
+                    <div class="timeline-dot"></div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-3">Education</h3>
+                    <p class="text-xl font-bold text-slate-800">AI & Data Science Engineering <span class="font-normal text-slate-500">— PVG's COET, Pune</span></p>
+                    <p class="text-slate-500 italic">2023 – present</p>
+                </div>
+                <div>
+                    <div class="timeline-dot"></div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-3">Experience</h3>
+                    <p class="text-xl font-bold text-slate-800">Web Projects <span class="font-normal text-slate-500">— Self Learning</span></p>
+                    <p class="text-slate-600 mt-2">Building real-world websites using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div>
+                    <p class="text-xl font-medium text-slate-700 mb-6">Let's connect!</p>
+                    <div class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-blue-100">
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label class="block text-slate-700 font-bold mb-2">Name *</label>
+                                <input type="text" name="name" id="contact-name" class="w-full p-4 rounded-xl bg-slate-50 border border-slate-100 focus:ring-2 focus:ring-blue-400 outline-none" required>
+                            </div>
+                            <div>
+                                <label class="block text-slate-700 font-bold mb-2">Email *</label>
+                                <input type="email" name="email" id="contact-email" class="w-full p-4 rounded-xl bg-slate-50 border border-slate-100 focus:ring-2 focus:ring-blue-400 outline-none" required>
+                            </div>
+                            <div>
+                                <label class="block text-slate-700 font-bold mb-2">Message *</label>
+                                <textarea name="message" id="contact-message" rows="4" class="w-full p-4 rounded-xl bg-slate-50 border border-slate-100 focus:ring-2 focus:ring-blue-400 outline-none" required></textarea>
+                            </div>
+                            <div id="contact-status" class="text-sm h-6"></div>
+                            <button type="submit" class="px-10 py-4 bg-blue-600 text-white font-bold rounded-full btn-shadow hover:bg-blue-700 transition">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="md:pt-14 space-y-8">
+                    <h2 class="text-4xl font-black text-slate-900">Connect with me</h2>
+                    <div class="space-y-4">
+                        <p class="text-lg"><span class="text-slate-500 font-medium">Email:</span> <a href="mailto:sanskrutigangurde95@gmail.com" class="text-blue-600 hover:underline">sanskrutigangurde95@gmail.com</a></p>
+                        <p class="text-lg"><span class="text-slate-500 font-medium">GitHub:</span> <a href="https://github.com/Sanskruti-lab" class="text-blue-600 hover:underline" target="_blank">Sanskruti-lab</a></p>
+                        <p class="text-lg"><span class="text-slate-500 font-medium">LinkedIn:</span> <a href="#" class="text-blue-600 hover:underline" target="_blank">sanskruti gangurde</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+
+    <!-- Email sending (EmailJS with mailto fallback) -->
+    <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+    <script>
+        // Configuration: replace these values with your EmailJS credentials
+        const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+        const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
+        const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+
+        // Initialize EmailJS only when public key is set
+        (function() {
+            if (!EMAILJS_PUBLIC_KEY.includes('YOUR_')) {
+                emailjs.init(EMAILJS_PUBLIC_KEY);
+                window._emailjsReady = true;
+            } else {
+                window._emailjsReady = false;
+                console.warn('EmailJS not configured — mailto fallback will be used.');
+            }
+        })();
+
+        // Handle form submission and send via EmailJS or mailto fallback
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const statusEl = document.getElementById('contact-status');
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+                statusEl.textContent = '';
+
+                const templateParams = {
+                    from_name: form.querySelector('input[name="name"]').value,
+                    reply_to: form.querySelector('input[name="email"]').value,
+                    message: form.querySelector('textarea[name="message"]').value
+                };
+
+                // If EmailJS is configured, use it
+                if (window._emailjsReady && !EMAILJS_SERVICE_ID.includes('YOUR_') && !EMAILJS_TEMPLATE_ID.includes('YOUR_')) {
+                    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+                        .then(function() {
+                            statusEl.className = 'text-green-600 font-bold';
+                            statusEl.textContent = 'Message sent — thanks! I will reply soon.';
+                            form.reset();
+                        }, function(error) {
+                            console.error('EmailJS error:', error);
+                            statusEl.className = 'text-red-600 font-bold';
+                            statusEl.textContent = 'Oops — something went wrong. Please email directly to sanskrutigangurde95@gmail.com';
+                        })
+                        .finally(function() {
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = 'Send Message';
+                        });
+                } else {
+                    // Fallback: open user's email client with a pre-filled message
+                    const subject = encodeURIComponent('Contact from ' + templateParams.from_name);
+                    const body = encodeURIComponent('Name: ' + templateParams.from_name + '\nEmail: ' + templateParams.reply_to + '\n\n' + templateParams.message);
+                    const mailto = `mailto:sanskrutigangurde95@gmail.com?subject=${subject}&body=${body}`;
+
+                    statusEl.className = 'text-blue-600 font-medium';
+                    statusEl.textContent = 'Opening your email client...';
+                    // small timeout to let status show before redirecting
+                    setTimeout(() => { window.location.href = mailto; }, 400);
+
+                    // Reset button
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send Message';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
